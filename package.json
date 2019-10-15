@@ -1,0 +1,37 @@
+{
+  "name": "ts-nurseSchedule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run lint && rimraf dist && tsc",
+    "d": "set NODE_ENV=dev&& npm run build && nodemon --config nodemon.json",
+    "start": "npm run lint && tsc && node dist/index.js",
+    "lint": "tslint -p .",
+    "remove": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bizarim/ts-nurseSchedule.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bizarim/ts-nurseSchedule/issues"
+  },
+  "homepage": "https://github.com/bizarim/ts-nurseSchedule#readme",
+  "dependencies": {
+    "copyfiles": "^2.1.1",
+    "rimraf": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.2",
+    "nodemon": "^1.19.3",
+    "ts-node": "^8.3.0",
+    "tsconfig-paths": "^3.9.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}
